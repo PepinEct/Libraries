@@ -27,7 +27,7 @@ class Key:
     def load(self, filename=__DefFileName__):
         with open(filename, 'rb') as file:
             data = file.read()
-        self.key = gzip.decompress(data)
+        self.key = json.loads(gzip.decompress(data).decode())
 def Encrypt(key:Key, msg:str):
     if type(key) != Key:
         raise(TypeError)
