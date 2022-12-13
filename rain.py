@@ -5,8 +5,6 @@ grid = Grid(' ')
 grid.CreateGrid(50, 30, '#')
 
 
-#todo
-# make lightning retrieve instead of disaperaring
 class OLD_METHODE: #uses multithreading instead, more possibilities more easily but uses more system resources
     def show():
         while True:
